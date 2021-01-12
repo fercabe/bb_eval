@@ -1,4 +1,4 @@
-#**BB_eval**
+# **BB_eval**
 
 ## Introduction
 bb_eval is a simple tool to evaluate software softwar assignments to students through the well-known BlackBoard platform. This tool is specially intended for introdution to C/C++ programming. 
@@ -33,3 +33,7 @@ Yoou can uninstall the binaries for your system by running the following command
 ```
 $ sudo make uninstall
 ```
+## Running bb_eval
+bb_eval searches for the **bb_eval.conf** file with all the evaluation information. In "conf_example" you can find a self-explained file with a simple evaluation. This file contents all the parameters of the evaluation: list path, submission files path, how to launch the evaluator for each excersise, etc.
+
+When bb_eval finishes successfully, it creates a .xls file with given "eval_id" as name with the results of the evaluation. This file can be upload to BlackBoard into the corresponding grade column.
