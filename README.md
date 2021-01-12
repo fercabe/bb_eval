@@ -1,4 +1,4 @@
-## bb_eval
+# bb_eval
 
 # Introduction
 bb_eval is a simple tool to evaluate software softwar assignments to students through the well-known BlackBoard platform. This tool is specially intended for introdution to C/C++ programming. 
