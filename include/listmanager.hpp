@@ -65,7 +65,7 @@ struct ListManager
                     ofs << '"' << _data[i].cols[j] << '"' << "\t";
                 else
                 {
-                    if(_data[i].grade > 0)
+                    if(_data[i].grade >= 0)
                     {
                         ofs << '"' << (int)_data[i].grade << ',' << (int)(10.0*(_data[i].grade-(int)_data[i].grade)) << '"' << "\t";
                     }
