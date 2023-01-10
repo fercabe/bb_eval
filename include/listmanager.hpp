@@ -80,6 +80,28 @@ struct ListManager
         ofs.close();
     }
 
+    void print(void)
+    {        
+        for(int i=0; i<_data.size(); i++)
+        {
+            for(int j=0; j<_data[i].cols.size(); j++)
+            {
+                if(j != _sCol)
+                    std::cout << '"' << _data[i].cols[j] << '"' << "\t";
+                else
+                {
+                    if(_data[i].grade >= 0)
+                    {
+                        std::cout << '"' << (int)_data[i].grade << ',' << (int)(10.0*(_data[i].grade-(int)_data[i].grade)) << '"' << "\t";
+                    }
+                    else 
+                        std::cout << '"' << _data[i].cols[j] << '"' << "\t";
+                }
+            }
+            std::cout << std::endl;
+        }
+    }
+
     void setIdCol(int iCol)
     {
         _iCol = iCol;
