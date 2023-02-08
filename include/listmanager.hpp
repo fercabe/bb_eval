@@ -44,9 +44,11 @@ struct ListManager
                 else if(copy == 1)
                     elem.push_back(*it);             
             }
-            ent.cols.push_back(elem);
+            if(!elem.empty())
+                ent.cols.push_back(elem);
             ent.grade = -1.0;
-            _data.push_back(ent);
+            if(ent.cols.size() >= 1)
+                _data.push_back(ent);
         }
     }
 
